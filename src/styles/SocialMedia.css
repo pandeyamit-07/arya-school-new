@@ -1,0 +1,140 @@
+.social-section {
+  padding: 64px 20px;
+  background: #0b1021;
+  color: #f6f8ff;
+}
+
+.social-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 12px;
+  color: #8ea0d0;
+  margin-bottom: 8px;
+}
+
+.social-section h2 {
+  font-size: 28px;
+  margin: 0 0 12px;
+}
+
+.social-subtitle {
+  max-width: 520px;
+  color: #cfd7f3;
+  margin: 0;
+}
+
+.social-actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.social-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 18px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #141b2f;
+  color: #f6f8ff;
+  text-decoration: none;
+  transition: transform 0.12s ease, box-shadow 0.12s ease, border-color 0.12s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.social-btn:hover {
+  transform: translateY(-1px);
+  border-color: var(--accent, #ffffff);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.32);
+}
+
+.social-icon-wrap {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: var(--accent);
+  display: grid;
+  place-items: center;
+  color: #ffffff; /* 👈 IMPORTANT */
+}
+
+
+
+
+
+.social-label {
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+@media (max-width: 768px) {
+  .social-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+  .social-section h2 {
+    font-size: 22px;
+  }
+  .social-subtitle {
+    max-width: 100%;
+    font-size: 14px;
+  }
+  .social-actions {
+    gap: 12px;
+  }
+  .social-btn {
+    padding: 10px 14px;
+    font-size: 14px;
+  }
+  .social-icon-wrap {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .social-section {
+    padding: 40px 12px;
+  }
+  .social-inner {
+    gap: 16px;
+  }
+  .eyebrow {
+    font-size: 11px;
+  }
+  .social-section h2 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  .social-subtitle {
+    font-size: 12px;
+  }
+  .social-actions {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .social-btn {
+    padding: 8px 12px;
+    font-size: 12px;
+    gap: 8px;
+  }
+  .social-icon-wrap {
+    width: 24px;
+    height: 24px;
+  }
+  .social-label {
+    font-size: 12px;
+  }
+}

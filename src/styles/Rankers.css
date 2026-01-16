@@ -1,0 +1,228 @@
+.rankers-section {
+  padding: 60px 30px;
+  text-align: center;
+  background: white;
+  margin: 20px auto;
+  max-width: 1200px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border: none !important;
+  overflow: hidden;
+  border-bottom: 0 !important;
+}
+
+.rankers-section h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #123499;
+  font-weight: 700;
+}
+
+.rankers-tabs {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.tab-btn {
+  background: #363e47;
+  color: #c8cfda;
+  border: 2px solid transparent;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+
+.tab-btn:hover {
+  background: #212224;
+}
+
+.tab-btn.active {
+  background: #123499;
+  color: white;
+  border-color: #123499;
+}
+
+.rankers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+  border: none !important;
+  border-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.ranker-card {
+  background: linear-gradient(135deg, #f8fafc 0%, #eef2ff 100%);
+  border-radius: 16px;
+  width: 280px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(18, 52, 153, 0.1);
+  transition: all 300ms ease;
+  border: 1px solid rgba(18, 52, 153, 0.08);
+}
+
+.ranker-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(18, 52, 153, 0.18);
+}
+
+.ranker-image {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+}
+
+.ranker-info {
+  padding: 24px;
+}
+
+.ranker-info h3 {
+  font-size: 22px;
+  color: #123499;
+  margin: 0 0 8px 0;
+  font-weight: 700;
+}
+
+.ranker-year {
+  color: #64748b;
+  font-size: 14px;
+  margin: 0 0 16px 0;
+}
+
+.ranker-percentage {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px;
+  background: white;
+  border-radius: 10px;
+  border: 2px solid #ffd54f;
+}
+
+.percentage-label {
+  color: #64748b;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.percentage-value {
+  font-size: 28px;
+  font-weight: 700;
+  color: #123499;
+}
+
+.rankers-show-more {
+  margin-top: 30px;
+  padding-top: 0;
+  border: none;
+  display: flex;
+  justify-content: center;
+}
+
+.rankers-show-more .tab-btn {
+  margin-top: 10px;
+}
+
+@media (max-width: 720px) {
+  .rankers-section {
+    padding: 30px 15px;
+    margin: 15px auto;
+  }
+  .rankers-section h2 {
+    font-size: 22px;
+    margin-bottom: 25px;
+  }
+  .rankers-tabs {
+    gap: 12px;
+    margin-bottom: 30px;
+  }
+  .tab-btn {
+    padding: 10px 22px;
+    font-size: 14px;
+  }
+  .rankers-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  .ranker-card {
+    width: 100%;
+  }
+  .ranker-image {
+    height: 160px;
+  }
+  .ranker-info {
+    padding: 14px;
+  }
+  .ranker-info h3 {
+    font-size: 14px;
+  }
+  .ranker-year {
+    font-size: 11px;
+  }
+  .ranker-percentage {
+    padding: 10px;
+  }
+  .percentage-label {
+    font-size: 11px;
+  }
+  .percentage-value {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .rankers-section {
+    padding: 20px 10px;
+    margin: 10px auto;
+  }
+  .rankers-section h2 {
+    font-size: 18px;
+    margin-bottom: 18px;
+  }
+  .rankers-tabs {
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+  .tab-btn {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+  .rankers-grid {
+    gap: 10px;
+  }
+  .ranker-image {
+    height: 140px;
+  }
+  .ranker-info {
+    padding: 12px;
+  }
+  .ranker-info h3 {
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+  .ranker-year {
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+  .ranker-percentage {
+    padding: 8px;
+  }
+  .percentage-label {
+    font-size: 9px;
+  }
+  .percentage-value {
+    font-size: 16px;
+  }
+  .rankers-show-more {
+    margin-top: 15px;
+  }
+}
