@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "../styles/AboutPrincipal.css";
-import logo from "../assets/img/aryaLogo.jpg";
+import prince from "../assets/img/Teachers/principle2.png";
 
 
 function AboutPrincipal() {
@@ -11,7 +11,7 @@ function AboutPrincipal() {
       <div className="principal-container">
         <div className="principal-image">
           <img
-           src={logo}
+           src={prince}
             alt="Mr. Munna Prashad"
           />
         </div>
@@ -26,11 +26,10 @@ function AboutPrincipal() {
           </div>
 
           <p className="principal-message">
-            Our mission is to nurture students with discipline, knowledge, and
-            values for a successful future. At Arya English High School & Junior
-            College, we believe in holistic development of every child. We foster
-            an environment where students not only excel academically but also
-            develop into responsible, compassionate, and creative individuals.
+              At Arya English High School & Junior<br></br>
+              Our mission is to faster an inducive, innovative learning environment that encourages students to explore their potential nature their talents and become compassionak, lifelong learners with discipline, knowledge, and values for a successful future.
+              We commit to providing a holistic education that balances academic excellence with personal growth preparing our students to navigate life's challenges and contribute meaningfully to society
+            
           </p>
 
           <p className="principal-message">
@@ -54,6 +53,7 @@ function AboutPrincipal() {
         <div className="expanded-content">
           <h3>My Vision for Our School</h3>
           <p>
+            Our vision is to develop well rounded, confident and responsible student who aspire to achieve the height of success.<br></br>
             Education is not merely about acquiring knowledge; it is about
             developing the character and capabilities of our students. At Arya
             English High School & Junior College, we believe that every child
@@ -62,6 +62,7 @@ function AboutPrincipal() {
             methodologies to ensure that students are well-equipped for the
             challenges of the 21st century.
           </p>
+        
 
           <h3>Commitment to Excellence</h3>
           <p>

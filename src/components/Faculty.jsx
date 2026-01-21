@@ -1,35 +1,47 @@
 import "../styles/Faculty.css";
 
+import logo from "../assets/img/AryaLogo.png";
+
+//temp data for faculty members
+
+// import tec1 from "../assets/img/Teachers/tec1.jpg";
+// import tec2 from "../assets/img/Teachers/tec2.jpg";
+// import tec3 from "../assets/img/Teachers/tec3.jpg";
+// import tec4 from "../assets/img/Teachers/tec4.jpg";
+// import tec5 from "../assets/img/Teachers/tec5.jpg";
+
+
+
 const faculty = [
   { 
     name: "Mr. R. Kulkarni", 
     role: "Maths Teacher",
     description: "Experienced mathematician with 15+ years of teaching expertise. Specializes in making complex concepts simple and engaging.",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop"
+    image: logo
   },
   { 
     name: "Mrs. S. Joshi", 
     role: "Science Teacher",
     description: "Passionate science educator dedicated to hands-on learning. Expert in physics, chemistry, and biology with modern lab practices.",
-    image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&h=500&fit=crop"
+    image: logo
   },
   { 
     name: "Mr. A. Patil", 
     role: "English Teacher",
     description: "Literature and language expert focused on communication skills. Helps students develop confidence in expression and writing.",
-    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=500&fit=crop"
+    image: logo
   },
   { 
     name: "Mrs. K. Mehta", 
     role: "Computer Teacher",
     description: "Tech-savvy educator introducing students to coding and computer applications. Keeps curriculum updated with latest technologies.",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=500&fit=crop"
+    image: logo
   },
   { 
     name: "Mr. D. Sharma", 
     role: "Sports Instructor",
     description: "Fitness and sports enthusiast committed to building healthy and disciplined students. Trains multiple sports disciplines.",
-    image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=500&fit=crop"
+    image: logo
   }
 ];
 

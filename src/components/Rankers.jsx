@@ -1,37 +1,62 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "../styles/Rankers.css";
 
 //SSC Rankers
 import SSC20 from "../assets/img/Rankers/SSC/Alok2020.png";
+import SSC21 from "../assets/img/Rankers/SSC/Alok2020.png";
+import SSC22 from "../assets/img/Rankers/SSC/Alok2020.png";
+import SSC23 from "../assets/img/Rankers/SSC/Alok2020.png";
+import SSC24 from "../assets/img/Rankers/SSC/Alok2020.png";
+import SSC25 from "../assets/img/Rankers/SSC/Alok2020.png";
 
 //HSC Rankers
+
+import HSC20 from "../assets/img/Rankers/HSC/Alok2022.png";
+import HSC21 from "../assets/img/Rankers/HSC/Alok2022.png";
 import HSC22 from "../assets/img/Rankers/HSC/Alok2022.png";
+import HSC23 from "../assets/img/Rankers/HSC/Alok2022.png";
+import HSC24 from "../assets/img/Rankers/HSC/Alok2022.png";
+import HSC25 from "../assets/img/Rankers/HSC/Alok2022.png";
+
+//temp
+import logo from "../assets/img/AryaLogo.png";
 
 const rankers10 = [
-  { name: "Kabir Iyer", year: 2025, percentage: 95.9, image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop" },
-  { name: "Aarav Patil", year: 2024, percentage: 95.2, image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop" },
-  { name: "Sneha Sharma", year: 2023, percentage: 94.8, image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop" },
-  { name: "Rahul Verma", year: 2022, percentage: 94.1, image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop" },
-  { name: "Manya Desai", year: 2021, percentage: 93.9, image: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=400&h=400&fit=crop" },
+  { name: "Kabir Iyer", year: 2025, percentage: 95.9, image: logo },
+  { name: "Aarav Patil", year: 2024, percentage: 95.2, image: logo },
+  { name: "Sneha Sharma", year: 2023, percentage: 94.8, image: logo  },
+  { name: "Rahul Verma", year: 2022, percentage: 94.1, image: logo  },
+  { name: "Manya Desai", year: 2021, percentage: 93.9, image: logo },
   { name: "Alok Chaudhary", year: 2020, percentage: 85.6, image: SSC20 }
 ];
 
 const rankers12 = [
-  { name: "Ananya Kulkarni", year: 2025, percentage: 97.3, image: "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?w=400&h=400&fit=crop" },
-  { name: "Priya Singh", year: 2024, percentage: 96.5, image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop" },
-  { name: "Arjun Kapoor", year: 2023, percentage: 95.8, image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop" },
+ { name: "Kabir Iyer", year: 2025, percentage: 95.9, image: logo },
+  { name: "Aarav Patil", year: 2024, percentage: 95.2, image: logo },
+  { name: "Sneha Sharma", year: 2023, percentage: 94.8, image: logo  },
   { name: "Alok Chaudhary", year: 2022, percentage: 69,image: HSC22 },
-  { name: "Saanvi Mehta", year: 2021, percentage: 94.7, image: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=400&h=400&fit=crop" },
-  { name: "Rohan Malik", year: 2020, percentage: 94.0, image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop" }
+  { name: "Saanvi Mehta", year: 2021, percentage: 94.7, image: logo },
+  { name: "Rohan Malik", year: 2020, percentage: 94.0, image: logo }
 ];
 
 function Rankers() {
   const [activeTab, setActiveTab] = useState("10th");
   const [showMore, setShowMore] = useState({ "10th": false, "12th": false });
+  const [isWebView, setIsWebView] = useState(window.innerWidth >= 768);
+
+  // Handle window resize to determine view type
+  useEffect(() => {
+    const handleResize = () => {
+      setIsWebView(window.innerWidth >= 768);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const rankersList = activeTab === "10th" ? rankers10 : rankers12;
   const sortedRankers = [...rankersList].sort((a, b) => b.year - a.year);
-  const visibleRankers = showMore[activeTab] ? sortedRankers : sortedRankers.slice(0, 4);
+  const itemsToShow = isWebView ? 3 : 4;
+  const visibleRankers = showMore[activeTab] ? sortedRankers : sortedRankers.slice(0, itemsToShow);
 
   return (
     <section className="rankers-section">

@@ -3,7 +3,7 @@ import "../styles/HeroSlider.css";
 
 import aryaTeam from "../assets/img/Slider/slider1.JPG";
 import sportsImg from "../assets/img/Slider/slider2.jpg";
-import tripImg from "../assets/img/Slider/slider3.jpg";
+import tripImg from "../assets/img/Slider/slide3.jpeg";
 
 const slides = [
   {

@@ -1,13 +1,13 @@
 import "../styles/Activities.css";
 
 
-import tiny from "../assets/img/Activity/aryaLogo.jpg";
+import tiny from "../assets/img/Activity/tinny0.png";
 import sci from "../assets/img/Activity/aryaLogo.jpg";
 import com from "../assets/img/Activity/aryaLogo.jpg";
-import act from "../assets/img/Activity/activity0.JPG";
+import act from "../assets/img/Activity/act0.png";
 import sport from "../assets/img/Activity/sport0.jpg";
 import trip from "../assets/img/Activity/trip0.jpg";
-import ann from "../assets/img/Activity/aryaLogo.jpg";
+import ann from "../assets/img/Activity/ann0.JPG";
 
 
 
@@ -102,10 +102,6 @@ function Activities() {
                 </div>
               )}
             </div>
-
-            {index < activitiesData.length - 1 && (
-              <div className="activity-connector"></div>
-            )}
           </div>
         ))}
       </div>

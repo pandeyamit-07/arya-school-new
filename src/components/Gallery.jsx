@@ -7,50 +7,48 @@ import Footer from "./Footer";
 import tiny1 from "../assets/img/Activity/aryaLogo.jpg";
 import tiny2 from "../assets/img/Activity/aryaLogo.jpg";
 import tiny3 from "../assets/img/Activity/aryaLogo.jpg";
-import tiny4 from "../assets/img/Activity/acitivity2.jpg";
+import tiny4 from "../assets/img/Activity/tinny0.png";
 
-//temporariry
-import act from "../assets/img/Activity/aryaLogo.jpg";
 
 // science Practical
-// import sci1 from "../assets/img/Activity/aryaLogo.jpg";
-// import sci2 from "../assets/img/Activity/aryaLogo.jpg";
-// import sci3 from "../assets/img/Activity/aryaLogo.jpg";
-// import sci4 from "../assets/img/Activity/acitivity2.jpg";
+import sci1 from "../assets/img/Activity/aryaLogo.jpg";
+import sci2 from "../assets/img/Activity/aryaLogo.jpg";
+import sci3 from "../assets/img/Activity/aryaLogo.jpg";
+import sci4 from "../assets/img/Activity/aryaLogo.jpg";
 
 
 // Computer lab
-// import com1 from "../assets/img/Activity/aryaLogo.jpg";
-// import com2 from "../assets/img/Activity/aryaLogo.jpg";
-// import com3 from "../assets/img/Activity/aryaLogo.jpg";
-// import com4 from "../assets/img/Activity/acitivity2.jpg";
+import com1 from "../assets/img/Activity/aryaLogo.jpg";
+import com2 from "../assets/img/Activity/aryaLogo.jpg";
+import com3 from "../assets/img/Activity/aryaLogo.jpg";
+import com4 from "../assets/img/Activity/aryaLogo.jpg";
 
 
 // Cultural Activity
-// import act1 from "../assets/img/Activity/aryaLogo.jpg";
-// import act2 from "../assets/img/Activity/aryaLogo.jpg";
-// import act3 from "../assets/img/Activity/aryaLogo.jpg";
-// import act4 from "../assets/img/Activity/acitivity2.jpg";
+import act1 from "../assets/img/Activity/aryaLogo.jpg";
+import act2 from "../assets/img/Activity/aryaLogo.jpg";
+import act3 from "../assets/img/Activity/act3.jpg";
+import act4 from "../assets/img/Activity/aryaLogo.jpg";
 
 
 // Annual Sports
-// import sport1 from "../assets/img/Activity/aryaLogo.jpg";
-// import sport2 from "../assets/img/Activity/aryaLogo.jpg";
-// import sport3 from "../assets/img/Activity/aryaLogo.jpg";
-// import sport4 from "../assets/img/Activity/acitivity2.jpg";
+import sport1 from "../assets/img/Activity/sport1.jpg";
+import sport2 from "../assets/img/Activity/sport2.jpg";
+import sport3 from "../assets/img/Activity/sport3.jpg";
+import sport4 from "../assets/img/Activity/aryaLogo.jpg";
 
 
 // Educational Trip
-// import trip1 from "../assets/img/Activity/aryaLogo.jpg";
-// import trip2 from "../assets/img/Activity/aryaLogo.jpg";
-// import trip3 from "../assets/img/Activity/aryaLogo.jpg";
-// import trip4 from "../assets/img/Activity/acitivity2.jpg";
+import trip1 from "../assets/img/Activity/trip1.jpg";
+import trip3 from "../assets/img/Activity/trip2.jpg";
+import trip2 from "../assets/img/Activity/aryaLogo.jpg";
+import trip4 from "../assets/img/Activity/aryaLogo.jpg";
 
 // Annual Function
-// import ann1 from "../assets/img/Activity/aryaLogo.jpg";
-// import ann2 from "../assets/img/Activity/aryaLogo.jpg";
-// import ann3 from "../assets/img/Activity/aryaLogo.jpg";
-// import ann4 from "../assets/img/Activity/acitivity2.jpg";
+import ann1 from "../assets/img/Activity/aryaLogo.jpg";
+import ann2 from "../assets/img/Activity/aryaLogo.jpg";
+import ann3 from "../assets/img/Activity/aryaLogo.jpg";
+import ann4 from "../assets/img/Activity/aryaLogo.jpg";
 
 
 
@@ -80,19 +78,19 @@ const galleryData = {
     title: "SCIENCE PRACTICALS",
     images: [
       {
-        url:  act,
+        url: sci1,
         description: "Chemistry experiments with modern lab safety and equipment."
       },
       {
-        url:  act,
+        url: sci2,
         description: "Physics practicals that turn concepts into real-world observations."
       },
       {
-        url: act,
+        url: sci3,
         description: "Biology lab sessions using microscopes and specimen study."
       },
       {
-        url:  act,
+        url: sci4,
         description: "Students collaborating on experiments to learn scientific method."
       }
     ]
@@ -102,19 +100,19 @@ const galleryData = {
     title: "CULTURAL ACTIVITY",
     images: [
       {
-        url:  act,
+        url: act1,
         description: "Dance rehearsals that build rhythm, expression, and confidence."
       },
       {
-        url: act,
+        url: act2,
         description: "Art showcases where students display painting and craft work."
       },
       {
-        url:  act,
+        url: act3,
         description: "Music sessions with vocals and instruments on stage."
       },
       {
-        url:  act,
+        url: act4,
         description: "Drama performances highlighting creativity and storytelling."
       }
     ]
@@ -123,19 +121,19 @@ const galleryData = {
     title: "ANNUAL SPORTS",
     images: [
       {
-        url:  act,
+        url: sport1,
         description: "Track events where students compete with sportsmanship."
       },
       {
-        url:  act,
+        url: sport2,
         description: "Basketball matches fostering teamwork and strategy."
       },
       {
-        url: act,
+        url: sport3,
         description: "Football tournaments that build leadership on the field."
       },
       {
-        url:  act,
+        url: sport4,
         description: "Medal ceremonies celebrating athletic achievements."
       }
     ]
@@ -144,19 +142,19 @@ const galleryData = {
     title: "EDUCATIONAL TRIP",
     images: [
       {
-        url:  act,
+        url: trip1,
         description: "Visits to historical monuments to experience heritage firsthand."
       },
       {
-        url: act,
+        url: trip2,
         description: "Science museum exploration with interactive exhibits."
       },
       {
-        url:  act,
+        url: trip3,
         description: "Nature trails and biodiversity walks guided by experts."
       },
       {
-        url:  act,
+        url: trip4,
         description: "Industrial visits offering real-world technology exposure."
       }
     ]
@@ -165,19 +163,19 @@ const galleryData = {
     title: "ANNUAL FUNCTION",
     images: [
       {
-        url:  act,
+        url: ann1,
         description: "Dance performances by talented students on annual day."
       },
       {
-        url:  act,
+        url: ann2,
         description: "Musical ensembles featuring vocals and instruments."
       },
       {
-        url:  act,
+        url: ann3,
         description: "Stage dramas highlighting creativity and teamwork."
       },
       {
-        url:  act,
+        url: ann4,
         description: "Prize distribution honoring student achievements."
       }
     ]

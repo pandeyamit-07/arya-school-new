@@ -89,42 +89,6 @@
   font-weight: 400;
 }
 
-/* Dotted connector lines */
-.activity-connector {
-  width: 2px;
-  height: 25px;
-  margin: 0 auto;
-  background-image: repeating-linear-gradient(
-    to bottom,
-    #000 0,
-    #000 4px,
-    transparent 4px,
-    transparent 8px
-  );
-  background-size: 2px 8px;
-  position: relative;
-}
-
-.activity-connector::before,
-.activity-connector::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 8px;
-  height: 8px;
-  background: #000;
-  border-radius: 50%;
-}
-
-.activity-connector::before {
-  top: -4px;
-}
-
-.activity-connector::after {
-  bottom: -4px;
-}
-
 /* Tablet */
 @media (max-width: 1024px) {
   .activities-section {
@@ -198,10 +162,6 @@
     font-size: 13px;
     text-align: center;
   }
-
-  .activity-connector {
-    height: 15px;
-  }
 }
 
 @media (max-width: 480px) {
@@ -233,9 +193,5 @@
   .activity-description {
     font-size: 12px;
     line-height: 1.5;
-  }
-
-  .activity-connector {
-    height: 10px;
   }
 }
