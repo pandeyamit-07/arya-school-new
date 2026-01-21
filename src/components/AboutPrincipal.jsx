@@ -81,7 +81,7 @@ function AboutPrincipal() {
             our students. Through sports, cultural activities, community service,
             and experiential learning, we help them discover their talents and
             interests. We believe that a well-rounded education prepares students
-            not just for competitive exams, but for life itself.
+            not just for competitive exams,but for life itself.
           </p>
 
           <h3>Building Better Tomorrow</h3>
