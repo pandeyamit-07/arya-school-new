@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "../styles/AboutPrincipal.css";
-import prince from "../assets/img/Teachers/principle2.png";
+import prince from "../assets/img/Teachers/principle1.jpeg";
 
 
 function AboutPrincipal() {
@@ -20,7 +20,7 @@ function AboutPrincipal() {
           <div className="principal-intro">
             <p className="principal-greeting">HELLO THERE!</p>
             <h2 className="principal-name">
-              I'M <span>Munna Prashad</span>
+              I'M <span>Munna Prasad</span>
             </h2>
             <p className="principal-title">Principal</p>
           </div>

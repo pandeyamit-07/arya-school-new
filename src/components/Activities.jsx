@@ -2,7 +2,7 @@ import "../styles/Activities.css";
 
 
 import tiny from "../assets/img/Activity/tinny0.png";
-import sci from "../assets/img/Activity/aryaLogo.jpg";
+import sci from "../assets/img/Activity/sci0.webp";
 import com from "../assets/img/Activity/aryaLogo.jpg";
 import act from "../assets/img/Activity/act0.png";
 import sport from "../assets/img/Activity/sport0.jpg";

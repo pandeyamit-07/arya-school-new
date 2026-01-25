@@ -4,31 +4,25 @@ import Header from "./Header";
 import Footer from "./Footer";
 
 // tinyTots
-import tiny1 from "../assets/img/Activity/aryaLogo.jpg";
-import tiny2 from "../assets/img/Activity/aryaLogo.jpg";
-import tiny3 from "../assets/img/Activity/aryaLogo.jpg";
+import tiny1 from "../assets/img/Activity/tinny1.jpeg";
+import tiny2 from "../assets/img/Activity/tinny2.jpeg";
+import tiny3 from "../assets/img/Activity/tinny3.jpeg";
 import tiny4 from "../assets/img/Activity/tinny0.png";
 
 
 // science Practical
-import sci1 from "../assets/img/Activity/aryaLogo.jpg";
+import sci1 from "../assets/img/Activity/sci1.jpeg";
 import sci2 from "../assets/img/Activity/aryaLogo.jpg";
 import sci3 from "../assets/img/Activity/aryaLogo.jpg";
 import sci4 from "../assets/img/Activity/aryaLogo.jpg";
 
-
-// Computer lab
-import com1 from "../assets/img/Activity/aryaLogo.jpg";
-import com2 from "../assets/img/Activity/aryaLogo.jpg";
-import com3 from "../assets/img/Activity/aryaLogo.jpg";
-import com4 from "../assets/img/Activity/aryaLogo.jpg";
 
 
 // Cultural Activity
 import act1 from "../assets/img/Activity/aryaLogo.jpg";
 import act2 from "../assets/img/Activity/aryaLogo.jpg";
 import act3 from "../assets/img/Activity/act3.jpg";
-import act4 from "../assets/img/Activity/aryaLogo.jpg";
+import act4 from "../assets/img/Activity/act4.jpeg";
 
 
 // Annual Sports
@@ -41,14 +35,14 @@ import sport4 from "../assets/img/Activity/aryaLogo.jpg";
 // Educational Trip
 import trip1 from "../assets/img/Activity/trip1.jpg";
 import trip3 from "../assets/img/Activity/trip2.jpg";
-import trip2 from "../assets/img/Activity/aryaLogo.jpg";
+import trip2 from "../assets/img/Activity/trip3.jpeg";
 import trip4 from "../assets/img/Activity/aryaLogo.jpg";
 
 // Annual Function
 import ann1 from "../assets/img/Activity/aryaLogo.jpg";
 import ann2 from "../assets/img/Activity/aryaLogo.jpg";
 import ann3 from "../assets/img/Activity/aryaLogo.jpg";
-import ann4 from "../assets/img/Activity/aryaLogo.jpg";
+import ann4 from "../assets/img/Activity/ann4.jpeg";
 
 
 
@@ -66,11 +60,11 @@ const galleryData = {
       },
       {
         url: tiny3, 
-        description: "Senior tots participating in music and movement activities together."
+        description: "Play-zone fun that keeps our youngest learners engaged and active."
       },
       {
         url: tiny4,
-        description: "Play-zone fun that keeps our youngest learners engaged and active."
+        description: "Junior tots participating in music and movement activities together."
       }
     ]
   },
@@ -79,7 +73,7 @@ const galleryData = {
     images: [
       {
         url: sci1,
-        description: "Chemistry experiments with modern lab safety and equipment."
+        description: "Physics experiments with equipment learn with fun and curiosity."
       },
       {
         url: sci2,
@@ -109,11 +103,11 @@ const galleryData = {
       },
       {
         url: act3,
-        description: "Music sessions with vocals and instruments on stage."
+        description: "Leaders with team to build confidence and leadership skills."
       },
       {
         url: act4,
-        description: "Drama performances highlighting creativity and storytelling."
+        description: "National Days celebrations with flag hoisting and cultural performances."
       }
     ]
   },
@@ -122,15 +116,15 @@ const galleryData = {
     images: [
       {
         url: sport1,
-        description: "Track events where students compete with sportsmanship."
+        description: "Kabbadi tournament that builds teamwork and sportsmanship."
       },
       {
         url: sport2,
-        description: "Basketball matches fostering teamwork and strategy."
+        description: "Chess tournament that builds strategic thinking and problem solving."
       },
       {
         url: sport3,
-        description: "Football tournaments that build leadership on the field."
+        description: "Kho-kho tournament that builds teamwork and sportsmanship."
       },
       {
         url: sport4,
@@ -147,11 +141,11 @@ const galleryData = {
       },
       {
         url: trip2,
-        description: "Science museum exploration with interactive exhibits."
+        description: "field Visit to Village to learn about the culture and tradition."
       },
       {
         url: trip3,
-        description: "Nature trails and biodiversity walks guided by experts."
+        description: "Ellora Caves to learn about the heritage and history."
       },
       {
         url: trip4,
