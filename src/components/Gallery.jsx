@@ -1,8 +1,3 @@
-useEffect(() => {
-  document.title = "Gallery | Arya English High School";
-}, []);
-
-
 import { useState } from "react";
 import "../styles/Gallery.css";
 import Header from "./Header";
@@ -243,5 +238,6 @@ function Gallery() {
 }
 
 export default Gallery;
+
 
 
