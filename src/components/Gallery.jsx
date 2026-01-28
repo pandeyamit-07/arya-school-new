@@ -1,7 +1,14 @@
+useEffect(() => {
+  document.title = "Gallery | Arya English High School";
+}, []);
+
+
 import { useState } from "react";
 import "../styles/Gallery.css";
 import Header from "./Header";
 import Footer from "./Footer";
+
+
 
 // tinyTots
 import tiny1 from "../assets/img/Activity/tinny1.jpeg";
@@ -236,4 +243,5 @@ function Gallery() {
 }
 
 export default Gallery;
+
 
