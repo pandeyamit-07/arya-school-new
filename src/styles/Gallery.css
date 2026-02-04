@@ -244,7 +244,7 @@
   }
 
   .gallery-image-wrapper {
-    height: 200px;
+    height: 350px;
   }
 
   .gallery-card-content {
@@ -256,4 +256,5 @@
     line-height: 1.5;
   }
 }
+
 
