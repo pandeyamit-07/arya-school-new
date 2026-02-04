@@ -6,45 +6,45 @@ import Footer from "./Footer";
 
 
 // tinyTots
-import tiny1 from "../assets/img/Activity/tinny1.jpeg";
-import tiny2 from "../assets/img/Activity/tinny2.jpeg";
-import tiny3 from "../assets/img/Activity/tinny3.jpeg";
-import tiny4 from "../assets/img/Activity/tinny0.png";
+import tiny1 from "../assets/img/Activity/tinny1.webp";
+import tiny2 from "../assets/img/Activity/tinny2.webp";
+import tiny3 from "../assets/img/Activity/tinny4.webp";
+import tiny4 from "../assets/img/Activity/tinny3.webp";
 
 
 // science Practical
-import sci1 from "../assets/img/Activity/sci1.jpeg";
-import sci2 from "../assets/img/Activity/aryaLogo.jpg";
-import sci3 from "../assets/img/Activity/aryaLogo.jpg";
-import sci4 from "../assets/img/Activity/aryaLogo.jpg";
+import sci1 from "../assets/img/Activity/sci1.webp";
+import sci2 from "../assets/img/Activity/sci2.webp";
+import sci3 from "../assets/img/Activity/sci4.webp";
+import sci4 from "../assets/img/Activity/sci3.webp";
 
 
 
 // Cultural Activity
-import act1 from "../assets/img/Activity/aryaLogo.jpg";
-import act2 from "../assets/img/Activity/aryaLogo.jpg";
-import act3 from "../assets/img/Activity/act3.jpg";
-import act4 from "../assets/img/Activity/act4.jpeg";
+import act1 from "../assets/img/Activity/acc1.webp";
+import act2 from "../assets/img/Activity/aryaLogo.webp";
+import act3 from "../assets/img/Activity/act3.webp";
+import act4 from "../assets/img/Activity/act4.webp";
 
 
 // Annual Sports
-import sport1 from "../assets/img/Activity/sport1.jpg";
-import sport2 from "../assets/img/Activity/sport2.jpg";
-import sport3 from "../assets/img/Activity/sport3.jpg";
-import sport4 from "../assets/img/Activity/aryaLogo.jpg";
+import sport1 from "../assets/img/Activity/sport1.webp";
+import sport2 from "../assets/img/Activity/sport2.webp";
+import sport3 from "../assets/img/Activity/sport3.webp";
+import sport4 from "../assets/img/Activity/sport4.webp";
 
 
 // Educational Trip
-import trip1 from "../assets/img/Activity/trip1.jpg";
-import trip3 from "../assets/img/Activity/trip2.jpg";
-import trip2 from "../assets/img/Activity/trip3.jpeg";
-import trip4 from "../assets/img/Activity/aryaLogo.jpg";
+import trip1 from "../assets/img/Activity/trip1.webp";
+import trip3 from "../assets/img/Activity/trip2.webp";
+import trip2 from "../assets/img/Activity/trip3.webp";
+import trip4 from "../assets/img/Activity/aryaLogo.webp";
 
 // Annual Function
-import ann1 from "../assets/img/Activity/aryaLogo.jpg";
-import ann2 from "../assets/img/Activity/aryaLogo.jpg";
-import ann3 from "../assets/img/Activity/aryaLogo.jpg";
-import ann4 from "../assets/img/Activity/ann4.jpeg";
+import ann1 from "../assets/img/Activity/ann1.webp";
+import ann2 from "../assets/img/Activity/ann3.webp";
+import ann3 from "../assets/img/Activity/ann2.webp";
+import ann4 from "../assets/img/Activity/ann4.webp";
 
 
 
@@ -93,7 +93,7 @@ const galleryData = {
   },
   
   cultural: {
-    title: "CULTURAL ACTIVITY",
+    title: "ACTIVITY",
     images: [
       {
         url: act1,
@@ -184,7 +184,7 @@ function Gallery() {
   const sections = [
     { id: "tinyTots", label: "Tiny Tots" },
     { id: "Practicals", label: "Practicals" },
-    { id: "cultural", label: "Cultural Activity" },
+    { id: "cultural", label: "Activity" },
     { id: "annualSports", label: "Annual Sports" },
     { id: "educationalTrip", label: "Educational Trip" },
     { id: "annualFunction", label: "Annual Function" }

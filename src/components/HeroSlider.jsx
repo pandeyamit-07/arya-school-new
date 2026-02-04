@@ -1,8 +1,8 @@
 import { useEffect, useState, useRef } from "react";
 import "../styles/HeroSlider.css";
 
-import aryaTeam from "../assets/img/Slider/slider1.JPG";
-import sportsImg from "../assets/img/Slider/slider2.jpg";
+import aryaTeam from "../assets/img/Slider/slider1.webp";
+import sportsImg from "../assets/img/Slider/slider2.webp";
 import slideVideo from "../assets/img/Slider/slide4.mp4"
 
 const slides = [

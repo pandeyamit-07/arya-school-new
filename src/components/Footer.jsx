@@ -2,7 +2,7 @@ import "../styles/Footer.css";
 import { FaWhatsapp, FaInstagram, FaYoutube } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
-import logo from "../assets/img/AryaLogo.png";
+import logo from "../assets/img/AryaLogo2.webp";
 
 function Footer() {
   const mapQuery =

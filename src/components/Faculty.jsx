@@ -1,48 +1,65 @@
 import "../styles/Faculty.css";
 
-import logo from "../assets/img/AryaLogo.png";
+import logo from "../assets/img/AryaLogo2.webp";
 
 //temp data for faculty members
 
-// import tec1 from "../assets/img/Teachers/tec1.jpg";
-// import tec2 from "../assets/img/Teachers/tec2.jpg";
-// import tec3 from "../assets/img/Teachers/tec3.jpg";
-// import tec4 from "../assets/img/Teachers/tec4.jpg";
-// import tec5 from "../assets/img/Teachers/tec5.jpg";
+// import tec1 from "../assets/img/Teachers/tec1.webp";
+// import tec2 from "../assets/img/Teachers/tec2.webp";
+// import tec3 from "../assets/img/Teachers/tec3.webp";
+// import tec4 from "../assets/img/Teachers/tec4.webp";
+// import tec5 from "../assets/img/Teachers/tec5.webp";
 
 
 
 const faculty = [
   { 
-    name: "Mr. R. Kulkarni", 
-    role: "Maths Teacher",
-    description: "Experienced mathematician with 15+ years of teaching expertise. Specializes in making complex concepts simple and engaging.",
+    name: "Mrs. Amita", 
+    role: "Marathi Teacher",
     image: logo
   },
   { 
-    name: "Mrs. S. Joshi", 
+    name: "Miss Shivani", 
     role: "Science Teacher",
-    description: "Passionate science educator dedicated to hands-on learning. Expert in physics, chemistry, and biology with modern lab practices.",
+    image: logo
+  },
+  
+  { 
+    name: "Miss Laxmi", 
+    role: "Biology Teacher",
+    image: logo
+  },
+   { 
+    name: "Miss Pooja", 
+    role: "Hindi Teacher",
     image: logo
   },
   { 
-    name: "Mr. A. Patil", 
+    name: "Mrs. Sandhya", 
+    role: "Supervisor",
+    image: logo
+  },
+  { 
+    name: "Mr Mukesh", 
     role: "English Teacher",
-    description: "Literature and language expert focused on communication skills. Helps students develop confidence in expression and writing.",
     image: logo
   },
   { 
-    name: "Mrs. K. Mehta", 
-    role: "Computer Teacher",
-    description: "Tech-savvy educator introducing students to coding and computer applications. Keeps curriculum updated with latest technologies.",
+    name: "Mr Manish", 
+    role: "Chemistry Teacher",
     image: logo
   },
   { 
-    name: "Mr. D. Sharma", 
-    role: "Sports Instructor",
-    description: "Fitness and sports enthusiast committed to building healthy and disciplined students. Trains multiple sports disciplines.",
+    name: "Mr Annand", 
+    role: "Maths Teacher",
+    image: logo
+  },
+  { 
+    name: "Mr. Pradeep", 
+    role: "Physics Teacher",
     image: logo
   }
+ 
 ];
 
 function Faculty() {
@@ -58,7 +75,6 @@ function Faculty() {
             <div className="faculty-info">
               <h3 className="faculty-name">{f.name}</h3>
               <p className="faculty-role">{f.role}</p>
-              <p className="faculty-description">{f.description}</p>
             </div>
           </div>
         ))}

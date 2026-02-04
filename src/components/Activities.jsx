@@ -1,13 +1,13 @@
 import "../styles/Activities.css";
 
 
-import tiny from "../assets/img/Activity/tinny0.png";
+import tiny from "../assets/img/Activity/tinny0.webp";
 import sci from "../assets/img/Activity/sci0.webp";
-import com from "../assets/img/Activity/aryaLogo.jpg";
-import act from "../assets/img/Activity/act0.png";
-import sport from "../assets/img/Activity/sport0.jpg";
-import trip from "../assets/img/Activity/trip0.jpg";
-import ann from "../assets/img/Activity/ann0.JPG";
+import com from "../assets/img/Activity/sci3.webp";
+import act from "../assets/img/Activity/act0.webp";
+import sport from "../assets/img/Activity/sport0.webp";
+import trip from "../assets/img/Activity/trip0.webp";
+import ann from "../assets/img/Activity/ann0.webp";
 
 
 
@@ -36,7 +36,7 @@ const activitiesData = [
   },
   {
     id: 4,
-    title: "CULTURAL ACTIVITY",
+    title: "ACTIVITY",
     description: "Music, dance, drama, and art events that nurture creativity, stage confidence, and teamwork.",
     image: act,
     imagePosition: "right"

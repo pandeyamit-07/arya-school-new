@@ -1,7 +1,7 @@
 import "../styles/Testimonials.css";
 
 //temp
-import logo from "../assets/img/AryaLogo.png";
+import logo from "../assets/img/AryaLogo2.webp";
 
 // Testimonials Data
 // import test1 from "../assets/img/test/test1.jpg";

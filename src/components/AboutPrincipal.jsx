@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "../styles/AboutPrincipal.css";
-import prince from "../assets/img/Teachers/principle1.jpeg";
+import prince from "../assets/img/Teachers/principle1.webp";
 
 
 function AboutPrincipal() {

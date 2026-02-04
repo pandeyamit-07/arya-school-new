@@ -146,6 +146,7 @@
   }
   .faculty-grid {
     gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
   }
   .faculty-image {
     height: 140px;
