@@ -5,9 +5,9 @@ import "../styles/Rankers.css";
 import SSC20 from "../assets/img/Rankers/SSC/Alok2020.webp";
 import SSC21 from "../assets/img/Rankers/SSC/SSC21.webp";
 import SSC22 from "../assets/img/Rankers/SSC/SSC22.webp";
-// import SSC23 from "../assets/img/Rankers/SSC/SSC23.webp";
-// import SSC24 from "../assets/img/Rankers/SSC/SSC24.webp";
-// import SSC25 from "../assets/img/Rankers/SSC/SSC25.webp";
+import SSC23 from "../assets/img/Rankers/SSC/SSC23.webp";
+import SSC24 from "../assets/img/Rankers/SSC/SSC24.png";
+import SSC25 from "../assets/img/Rankers/SSC/SSC25.png";
 
 //HSC Rankers
 
@@ -22,9 +22,9 @@ import HSC25 from "../assets/img/Rankers/HSC/Alok2022.webp";
 import logo from "../assets/img/AryaLogo2.webp";
 
 const rankers10 = [
-  { name: "Shrikant Yadav", year: 2025, percentage: 95.9, image: logo },
-  { name: "Satyam Prajapati", year: 2024, percentage: 95.2, image: logo },
-  { name: "Anjali Chaurasiya", year: 2023, percentage: 94.8, image: logo  },
+  { name: "Shrikant Yadav", year: 2025, percentage: 95.9, image: SSC25 },
+  { name: "Satyam Prajapati", year: 2024, percentage: 95.2, image: SSC24 },
+  { name: "Anjali Chaurasiya", year: 2023, percentage: 94.8, image: SSC23  },
   { name: "Ajeet Chaudhary", year: 2022, percentage: 94.1, image: SSC22  },
   { name: "Sachin Bhagat", year: 2021, percentage: 74, image: SSC21 },
   { name: "Alok Chaudhary", year: 2020, percentage: 85.60, image: SSC20 }

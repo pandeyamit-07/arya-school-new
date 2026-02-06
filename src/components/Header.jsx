@@ -98,7 +98,7 @@ function Header() {
         <Link to="/" onClick={() => setMobileMenuOpen(false)}>Home</Link>
         <a href="#activities" onClick={handleActivityClick}>Activity</a>
         <a href="#about-us" onClick={handleAboutUsClick}>About Us</a>
-        <a href="/gallery" onClick={handleGalleryClick} className="apply-btn-gallery">Gallery</a>
+        <a href="/gallery" onClick={handleGalleryClick} >Gallery</a>
         <a
           href="https://forms.gle/7P4xjgmXEA1KUESE9"
           onClick={handleApplyNowClick}
