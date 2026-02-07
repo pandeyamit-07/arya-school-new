@@ -14,7 +14,7 @@ import logo from "../assets/img/AryaLogo2.webp";
 
 const faculty = [
   { 
-    name: "Mrs. Amita", 
+    name: "Miss Amita", 
     role: "Marathi Teacher",
     image: logo
   },
