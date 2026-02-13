@@ -28,7 +28,7 @@ function AboutPrincipal() {
           <p className="principal-message">
               At Arya English High School & Junior<br></br>
               Our mission is to faster an inducive, innovative learning environment that encourages students to explore their potential nature their talents and become compassionak, lifelong learners with discipline, knowledge, and values for a successful future.
-              We commit to providing a holistic education that balances academic excellence with personal growth preparing our students to navigate life's challenges and contribute meaningfully to society
+              We promise to providing a holistic education that balances academic excellence with personal growth preparing our students to navigate life's challenges and contribute meaningfully to society
             
           </p>
 
