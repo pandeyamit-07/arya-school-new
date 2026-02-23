@@ -1,6 +1,6 @@
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
-import logo from "../assets/img/aryalogo.webp";
+import logo from "../assets/img/aryaLogo.webp";
 
 function Header() {
   const navigate = useNavigate();
