@@ -2,99 +2,102 @@ import { useState } from "react";
 import "../styles/AboutPrincipal.css";
 import prince from "../assets/img/Teachers/principle1.webp";
 
+const visionPoints = [
+  { icon: "🎓", title: "Academic Excellence", text: "Blending traditional values with modern teaching to equip students for 21st-century challenges." },
+  { icon: "💡", title: "Holistic Development", text: "Sports, arts, community service, and experiential learning help students discover their unique potential." },
+  { icon: "🌱", title: "Nurturing Environment", text: "A safe, inclusive, and caring space where every child feels seen, supported, and encouraged." },
+  { icon: "🚀", title: "Future Leaders", text: "We shape responsible citizens and innovators who will contribute positively to society." },
+];
 
 function AboutPrincipal() {
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [open, setOpen] = useState(false);
 
   return (
     <section id="about-us" className="principal-section">
-      <div className="principal-container">
-        <div className="principal-image">
-          <img
-           src={prince}
-            alt="Mr. Munna Prashad"
-          />
-        </div>
 
-        <div className="principal-content">
-          <div className="principal-intro">
-            <p className="principal-greeting">HELLO THERE!</p>
-            <h2 className="principal-name">
-              I'M <span>Munna Prasad</span>
-            </h2>
-            <p className="principal-title">Principal</p>
+      {/* ── Decorative blobs ── */}
+      <div className="p-blob p-blob-1" />
+      <div className="p-blob p-blob-2" />
+
+      {/* ── Top: Heading ── */}
+      <div className="principal-heading">
+        <span className="principal-pill">About Our Principal</span>
+        <h2>Meet <span>Our Leader</span></h2>
+        <p>Guiding Arya English High School with vision, dedication, and heart</p>
+      </div>
+
+      {/* ── Card: Photo + Bio ── */}
+      <div className="principal-card">
+
+        {/* Photo side */}
+        <div className="principal-photo-side">
+          <div className="principal-photo-frame">
+            <img src={prince} alt="Mr. Munna Prasad — Principal" className="principal-photo" />
+            <div className="principal-photo-glow" />
           </div>
+          <div className="principal-name-plate">
+            <h3>Munna Prasad</h3>
+            <span>Principal, Arya English High School</span>
+          </div>
+        </div>
 
+        {/* Text side */}
+        <div className="principal-text-side">
           <p className="principal-message">
-              At Arya English High School & Junior<br></br>
-              Our mission is to faster an inducive, innovative learning environment that encourages students to explore their potential nature their talents and become compassionak, lifelong learners with discipline, knowledge, and values for a successful future.
-              We promise to providing a holistic education that balances academic excellence with personal growth preparing our students to navigate life's challenges and contribute meaningfully to society
-            
+            At Arya English High School &amp; Junior College, our mission is to foster an
+            innovative learning environment that encourages students to explore their potential,
+            nurture their talents, and become compassionate lifelong learners — equipped with
+            discipline, knowledge, and values for a successful future.
+          </p>
+          <p className="principal-message">
+            We are committed to providing a holistic education that balances academic excellence
+            with personal growth, preparing every student to navigate life's challenges and
+            contribute meaningfully to society.
           </p>
 
-          <p className="principal-message">
-            With a team of dedicated educators and modern infrastructure, we
-            ensure that every student receives quality education and personal
-            attention. We are committed to preparing our students for the
-            challenges of tomorrow while instilling in them the values of
-            integrity, respect, and excellence.
-          </p>
-
+          {/* Expand button */}
           <button
-            className="principal-cta"
-            onClick={() => setIsExpanded(!isExpanded)}
+            className={`principal-toggle ${open ? "open" : ""}`}
+            onClick={() => setOpen(!open)}
+            aria-expanded={open}
           >
-            {isExpanded ? "Show Less" : "Learn More"}
+            <span>{open ? "Show Less" : "Read More"}</span>
+            <span className="toggle-chevron">{open ? "↑" : "↓"}</span>
           </button>
+
+          {/* Expanded content */}
+          {open && (
+            <div className="principal-expanded-text">
+              <p>
+                Our vision is to develop well-rounded, confident, and responsible students who
+                aspire to achieve the heights of success. Education is not merely about acquiring
+                knowledge — it is about developing the character and capabilities that will carry
+                students through every chapter of life.
+              </p>
+              <p>
+                With a team of dedicated educators and modern infrastructure, we ensure that every
+                student receives quality education and personal attention. We encourage our
+                students to think creatively, question thoughtfully, and act responsibly — together
+                building a better tomorrow.
+              </p>
+            </div>
+          )}
         </div>
       </div>
 
-      <div className={`principal-expanded ${isExpanded ? "open" : ""}`}>
-        <div className="expanded-content">
-          <h3>My Vision for Our School</h3>
-          <p>
-            Our vision is to develop well rounded, confident and responsible student who aspire to achieve the height of success.<br></br>
-            Education is not merely about acquiring knowledge; it is about
-            developing the character and capabilities of our students. At Arya
-            English High School & Junior College, we believe that every child
-            has unique potential waiting to be discovered and nurtured. Our
-            pedagogical approach combines traditional values with modern teaching
-            methodologies to ensure that students are well-equipped for the
-            challenges of the 21st century.
-          </p>
-        
-
-          <h3>Commitment to Excellence</h3>
-          <p>
-            We are committed to maintaining the highest standards of academic
-            excellence while ensuring that our students develop strong moral
-            values, critical thinking skills, and emotional intelligence. Our
-            faculty comprises experienced educators who are passionate about
-            their subjects and dedicated to the growth of every student. We
-            provide a safe, inclusive, and supportive environment where every
-            child can thrive.
-          </p>
-
-          <h3>Holistic Development</h3>
-          <p>
-            Beyond academics, we focus on the overall personality development of
-            our students. Through sports, cultural activities, community service,
-            and experiential learning, we help them discover their talents and
-            interests. We believe that a well-rounded education prepares students
-            not just for competitive exams,but for life itself.
-          </p>
-
-          <h3>Building Better Tomorrow</h3>
-          <p>
-            Our goal is to cultivate future leaders, innovators, and responsible
-            citizens who will contribute positively to society. We encourage our
-            students to think creatively, question thoughtfully, and act
-            responsibly. Together, with the support of our parents and community,
-            we are building a better tomorrow for our students.
-          </p>
-        </div>
+      {/* ── Vision grid ── */}
+      <div className="principal-vision">
+        {visionPoints.map((v) => (
+          <div key={v.title} className="vision-card">
+            <span className="vision-icon">{v.icon}</span>
+            <h4 className="vision-title">{v.title}</h4>
+            <p className="vision-text">{v.text}</p>
+          </div>
+        ))}
       </div>
+
     </section>
   );
 }
+
 export default AboutPrincipal;

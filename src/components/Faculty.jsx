@@ -40,17 +40,17 @@ const faculty = [
     image: logo
   },
   { 
-    name: "Mr Mukesh", 
+    name: "Mr. Mukesh", 
     role: "English Teacher",
     image: logo
   },
   { 
-    name: "Mr Manish", 
+    name: "Mr. Manish", 
     role: "Chemistry Teacher",
     image: logo
   },
   { 
-    name: "Mr Annand", 
+    name: "Mr. Anand", 
     role: "Maths Teacher",
     image: logo
   },

@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+
+.welcome-modal-message p {
+  font-size: 28px;
+  color: rgba(0, 0, 0, 0.85);
+  margin: 20px 0;
+}

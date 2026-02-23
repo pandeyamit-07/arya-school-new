@@ -1,6 +1,6 @@
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
-import logo from "../assets/img/AryaLogo2.webp";
+import logo from "../assets/img/aryalogo.webp";
 
 function Header() {
   const navigate = useNavigate();
@@ -10,8 +10,7 @@ function Header() {
   const handleGalleryClick = (e) => {
     e.preventDefault();
     setMobileMenuOpen(false);
-    const url = window.location.origin + "/gallery";
-    window.open(url, "_blank");
+    navigate("/gallery");
   };
 
   const handleApplyNowClick = (e) => {
@@ -85,7 +84,7 @@ function Header() {
           <small>&amp; Junior College</small>
         </div>
       </div>
-      <button 
+      <button
         className={`hamburger-menu ${mobileMenuOpen ? "open" : ""}`}
         onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         aria-label="Toggle menu"
