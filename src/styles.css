@@ -418,6 +418,67 @@ body {
   z-index: 1;
 }
 
+/* ═══════════════════════════════════════════════════════════════
+   WHATSAPP BUTTON
+═══════════════════════════════════════════════════════════════ */
+.whatsapp-btn {
+  position: fixed;
+  bottom: 96px;
+  right: 32px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #25d366 0%, #20ba5a 100%);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 9998;
+  box-shadow: 0 8px 28px rgba(37, 211, 102, 0.4), 0 0 0 0 rgba(37, 211, 102, 0.3);
+  opacity: 0;
+  transform: translateY(24px) scale(0.85);
+  pointer-events: none;
+  transition:
+    opacity 350ms cubic-bezier(0.34, 1.56, 0.64, 1),
+    transform 350ms cubic-bezier(0.34, 1.56, 0.64, 1),
+    box-shadow 220ms ease,
+    border-color 220ms ease;
+  overflow: hidden;
+}
+
+/* Visible state */
+.whatsapp-btn--visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+}
+
+/* Hover */
+.whatsapp-btn:hover {
+  background: linear-gradient(135deg, #20ba5a 0%, #1aa84d 100%);
+  border-color: #ffffff;
+  box-shadow: 0 12px 36px rgba(37, 211, 102, 0.5), 0 0 0 6px rgba(37, 211, 102, 0.15);
+  transform: translateY(-4px) scale(1.08);
+}
+
+/* Active / click press */
+.whatsapp-btn:active {
+  transform: translateY(-1px) scale(0.97);
+}
+
+/* Icon */
+.whatsapp-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 220ms ease;
+  position: relative;
+  z-index: 1;
+}
+
 .scroll-to-top-btn:hover .scroll-to-top-icon {
   transform: translateY(-2px);
 }

@@ -13,7 +13,7 @@ import Footer from "./components/Footer";
 import Gallery from "./components/Gallery";
 import "./styles.css";
 import logo from "./assets/img/AryaLogo2.webp";
-import { FaChevronUp } from "react-icons/fa";
+import { FaChevronUp, FaWhatsapp } from "react-icons/fa";
 
 function Home() {
   const [showWelcome, setShowWelcome] = useState(true);
@@ -96,6 +96,36 @@ function ScrollToTopButton() {
   );
 }
 
+function WhatsAppButton() {
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => {
+      setVisible(window.scrollY > 400);
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  const openWhatsApp = () => {
+    window.open("https://wa.me/917020859943", "_blank");
+  };
+
+  return (
+    <button
+      className={`whatsapp-btn${visible ? " whatsapp-btn--visible" : ""}`}
+      onClick={openWhatsApp}
+      aria-label="Chat on WhatsApp"
+      title="Chat on WhatsApp"
+    >
+      <span className="whatsapp-icon">
+        <FaWhatsapp />
+      </span>
+      <span className="whatsapp-ripple" />
+    </button>
+  );
+}
+
 function App() {
   return (
     <>
@@ -105,6 +135,7 @@ function App() {
           <Route path="/gallery" element={<Gallery />} />
         </Routes>
       </Router>
+      <WhatsAppButton />
       <ScrollToTopButton />
     </>
   );
