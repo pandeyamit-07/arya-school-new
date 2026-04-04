@@ -42,7 +42,7 @@ function Home() {
               ×
             </button>
             <div className="welcome-modal-badge"><img src={logo} alt="Arya School logo" className="logo-img-welcome" /></div>
-            <h2>Admissions are now open for the academic year 2026-2027 <br></br> Enrole today!</h2>
+            <h2>Admissions are now open for the academic year<br></br>2026-2027 Enrole today!</h2>
             <h3>Start your journey toward Excellence</h3>
             <p className="welcome-modal-message">
               <b> "Welcome to Arya English High School &amp; Jr. College."</b>
