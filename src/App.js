@@ -42,8 +42,8 @@ function Home() {
               ×
             </button>
             <div className="welcome-modal-badge"><img src={logo} alt="Arya School logo" className="logo-img-welcome" /></div>
-            <h2>All The Best for Our SSC & HSC Students! <br></br> Best of Luck for Board Exams</h2>
-            <h3>Admission open for Academic Year 2026 - 2027</h3>
+            <h2>Admissions are now open for the academic year 2026-2027 <br></br> Enrole today!</h2>
+            <h3>Start your journey toward Excellence</h3>
             <p className="welcome-modal-message">
               <b> "Welcome to Arya English High School &amp; Jr. College."</b>
             </p>
